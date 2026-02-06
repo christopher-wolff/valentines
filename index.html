@@ -229,59 +229,13 @@
         <span></span>
       </div>
       <h1>Will you be my valentine?</h1>
-      <p class="status" id="status-text">Someone adorable is waiting for your answer.</p>
-
       <div class="character-wrap">
-        <div class="character" aria-hidden="true">
-          <svg viewBox="0 0 260 240" role="img" aria-labelledby="title desc">
-            <title id="title">Cute waiting character</title>
-            <desc id="desc">A round blobby character with big eyes and rosy cheeks.</desc>
-            <defs>
-              <linearGradient id="bodyGrad" x1="0" x2="1" y1="0" y2="1">
-                <stop offset="0%" stop-color="#ffe5f1" />
-                <stop offset="100%" stop-color="#ffd0e6" />
-              </linearGradient>
-            </defs>
-            <g id="character-face">
-              <path
-                d="M34 130c0-55 45-98 96-98h0c51 0 96 43 96 98 0 52-40 84-96 84-56 0-96-32-96-84z"
-                fill="url(#bodyGrad)"
-                stroke="#ff9fbd"
-                stroke-width="4"
-              />
-              <circle cx="98" cy="118" r="12" fill="#2a0f1f" />
-              <circle cx="164" cy="118" r="12" fill="#2a0f1f" />
-              <circle cx="94" cy="114" r="4" fill="#fff" />
-              <circle cx="160" cy="114" r="4" fill="#fff" />
-              <path
-                id="mouth"
-                d="M112 154c10 10 26 10 36 0"
-                fill="none"
-                stroke="#2a0f1f"
-                stroke-width="5"
-                stroke-linecap="round"
-              />
-              <circle cx="78" cy="142" r="10" fill="#ff9fbd" opacity="0.7" />
-              <circle cx="182" cy="142" r="10" fill="#ff9fbd" opacity="0.7" />
-              <path
-                id="brow-left"
-                d="M84 92c8-8 20-10 30-6"
-                fill="none"
-                stroke="#2a0f1f"
-                stroke-width="4"
-                stroke-linecap="round"
-              />
-              <path
-                id="brow-right"
-                d="M146 86c10-4 22-2 30 6"
-                fill="none"
-                stroke="#2a0f1f"
-                stroke-width="4"
-                stroke-linecap="round"
-              />
-            </g>
-          </svg>
-        </div>
+        <img
+          class="character"
+          id="character-image"
+          src="https://media.tenor.com/5WkL53nXxM0AAAAM/cute-penguin.gif"
+          alt="A cute penguin waiting for your answer"
+        />
       </div>
 
       <div class="buttons" id="buttons">
@@ -294,8 +248,8 @@
         <p>Sending all the love, hugs, and happy dances.</p>
         <img
           class="dance-gif"
-          src="https://media.giphy.com/media/Q6xuxUhCgCNpsbfhaP/giphy.gif"
-          alt="A cute character dancing in celebration"
+          src="https://media.tenor.com/7H9s5M8Qf0QAAAAM/penguin-dance.gif"
+          alt="A cute penguin dancing in celebration"
         />
       </div>
     </main>
@@ -304,37 +258,24 @@
       const card = document.getElementById("valentine-card");
       const yesButton = document.getElementById("yes-btn");
       const noButton = document.getElementById("no-btn");
-      const statusText = document.getElementById("status-text");
+      const characterImage = document.getElementById("character-image");
       const confetti = document.getElementById("confetti");
-      const mouth = document.getElementById("mouth");
-      const browLeft = document.getElementById("brow-left");
-      const browRight = document.getElementById("brow-right");
 
       const yesSteps = [
         {
           label: "Yes",
           state: "",
-          status: "Someone adorable is waiting for your answer.",
+          image: "https://media.tenor.com/5WkL53nXxM0AAAAM/cute-penguin.gif",
         },
         {
           label: "Really?",
           state: "state-hopeful",
-          status: "They just got a little more hopeful...",
-          mouth: "M112 150c8 12 28 12 36 0",
-          brows: {
-            left: "M82 92c8-6 22-6 32-2",
-            right: "M146 90c12-2 24 0 30 8",
-          },
+          image: "https://media.tenor.com/gR4xvH6xAo4AAAAM/penguin-cute.gif",
         },
         {
           label: "Really really?",
           state: "state-extra-hopeful",
-          status: "They are positively glowing with hope!",
-          mouth: "M108 148c14 16 30 16 44 0",
-          brows: {
-            left: "M80 90c10-4 26-2 34 4",
-            right: "M144 92c14-2 28 4 32 10",
-          },
+          image: "https://media.tenor.com/AT13fEYKJQwAAAAM/ping%C3%BCino-cute.gif",
         },
       ];
 
@@ -362,17 +303,10 @@
         if (yesIndex < yesSteps.length) {
           const step = yesSteps[yesIndex];
           yesButton.textContent = step.label;
-          statusText.textContent = step.status;
+          characterImage.src = step.image;
           card.classList.remove("state-hopeful", "state-extra-hopeful");
           if (step.state) {
             card.classList.add(step.state);
-          }
-          if (step.mouth) {
-            mouth.setAttribute("d", step.mouth);
-          }
-          if (step.brows) {
-            browLeft.setAttribute("d", step.brows.left);
-            browRight.setAttribute("d", step.brows.right);
           }
           return;
         }
