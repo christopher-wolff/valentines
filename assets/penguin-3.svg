@@ -1,0 +1,15 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 220'>
+  <rect width='220' height='220' rx='40' fill='#f2eaff'/>
+  <ellipse cx='110' cy='118' rx='62' ry='76' fill='#20273a'/>
+  <ellipse cx='110' cy='126' rx='42' ry='56' fill='#fff'/>
+  <circle cx='88' cy='98' r='8' fill='#20273a'/>
+  <circle cx='132' cy='98' r='8' fill='#20273a'/>
+  <ellipse cx='110' cy='114' rx='12' ry='8' fill='#ffb347'/>
+  <path d='M94 148q16 8 32 0' stroke='#20273a' stroke-width='5' fill='none' stroke-linecap='round'/>
+  <circle cx='70' cy='124' r='12' fill='#ffc8dd' opacity='.8'/>
+  <circle cx='150' cy='124' r='12' fill='#ffc8dd' opacity='.8'/>
+  <path d='M92 76c8-12 28-12 36 0' stroke='#7a4cff' stroke-width='6' fill='none' stroke-linecap='round'/>
+  <path d='M94 67c6-7 26-7 32 0' stroke='#ff6fa8' stroke-width='4' fill='none' stroke-linecap='round'/>
+  <ellipse cx='52' cy='142' rx='16' ry='8' fill='#20273a' transform='rotate(-28 52 142)'/>
+  <ellipse cx='168' cy='142' rx='16' ry='8' fill='#20273a' transform='rotate(28 168 142)'/>
+</svg>

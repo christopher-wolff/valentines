@@ -66,12 +66,45 @@
       .character {
         width: clamp(180px, 35vw, 260px);
         transition: transform 0.4s ease;
+        --char-scale: 1;
       }
 
       .character svg {
         width: 100%;
         height: auto;
         display: block;
+      }
+
+      .character {
+        animation: floaty 2.8s ease-in-out infinite;
+      }
+
+      .state-extra-hopeful .character {
+        animation-duration: 1.8s;
+      }
+
+      .dance-gif {
+        animation: wiggle 1s ease-in-out infinite;
+      }
+
+      @keyframes floaty {
+        0%,
+        100% {
+          transform: translateY(0) scale(var(--char-scale));
+        }
+        50% {
+          transform: translateY(-8px) scale(var(--char-scale));
+        }
+      }
+
+      @keyframes wiggle {
+        0%,
+        100% {
+          transform: rotate(-3deg) scale(1);
+        }
+        50% {
+          transform: rotate(3deg) scale(1.04);
+        }
       }
 
       .buttons {
@@ -199,11 +232,11 @@
       }
 
       .state-hopeful .character {
-        transform: translateY(-6px) scale(1.02);
+        --char-scale: 1.04;
       }
 
       .state-extra-hopeful .character {
-        transform: translateY(-10px) scale(1.06);
+        --char-scale: 1.09;
       }
 
       .state-celebrate .character-wrap {
@@ -233,7 +266,7 @@
         <img
           class="character"
           id="character-image"
-          src="https://media.tenor.com/5WkL53nXxM0AAAAM/cute-penguin.gif"
+          src="assets/penguin-1.svg"
           alt="A cute penguin waiting for your answer"
         />
       </div>
@@ -248,7 +281,8 @@
         <p>Sending all the love, hugs, and happy dances.</p>
         <img
           class="dance-gif"
-          src="https://media.tenor.com/7H9s5M8Qf0QAAAAM/penguin-dance.gif"
+          id="dance-image"
+          src="assets/penguin-dance.svg"
           alt="A cute penguin dancing in celebration"
         />
       </div>
@@ -265,17 +299,17 @@
         {
           label: "Yes",
           state: "",
-          image: "https://media.tenor.com/5WkL53nXxM0AAAAM/cute-penguin.gif",
+          image: "assets/penguin-1.svg",
         },
         {
           label: "Really?",
           state: "state-hopeful",
-          image: "https://media.tenor.com/gR4xvH6xAo4AAAAM/penguin-cute.gif",
+          image: "assets/penguin-2.svg",
         },
         {
           label: "Really really?",
           state: "state-extra-hopeful",
-          image: "https://media.tenor.com/AT13fEYKJQwAAAAM/ping%C3%BCino-cute.gif",
+          image: "assets/penguin-3.svg",
         },
       ];
 
