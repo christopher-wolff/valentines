@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">Cute bunny excited</title>
+  <desc id="desc">A bunny with wider smile and sparkly hearts.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff6fd"/>
+      <stop offset="1" stop-color="#ffe2f2"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" rx="32" fill="url(#bg)"/>
+  <path d="M56 58l6 12 14 2-10 10 2 14-12-7-12 7 2-14-10-10 14-2z" fill="#ff9dcb" opacity=".75"/>
+  <path d="M184 54l5 10 11 2-8 8 2 11-10-6-10 6 2-11-8-8 11-2z" fill="#ffc2dd" opacity=".85"/>
+  <ellipse cx="88" cy="64" rx="18" ry="42" fill="#ffffff"/>
+  <ellipse cx="152" cy="64" rx="18" ry="42" fill="#ffffff"/>
+  <ellipse cx="88" cy="66" rx="8" ry="26" fill="#ffd4e7"/>
+  <ellipse cx="152" cy="66" rx="8" ry="26" fill="#ffd4e7"/>
+  <circle cx="120" cy="132" r="62" fill="#fff"/>
+  <circle cx="97" cy="123" r="6" fill="#3f2a36"/>
+  <circle cx="143" cy="123" r="6" fill="#3f2a36"/>
+  <ellipse cx="120" cy="137" rx="8" ry="6" fill="#ff8fbe"/>
+  <path d="M106 148c9 12 19 12 28 0" stroke="#3f2a36" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+  <ellipse cx="84" cy="138" rx="12" ry="8" fill="#ffcade"/>
+  <ellipse cx="156" cy="138" rx="12" ry="8" fill="#ffcade"/>
+  <path d="M120 184c-14 0-24 8-24 18h48c0-10-10-18-24-18z" fill="#ffe2ef"/>
+</svg>
