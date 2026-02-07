@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">Cute bunny waiting</title>
+  <desc id="desc">A shy bunny with tiny smile and blush.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff7fb"/>
+      <stop offset="1" stop-color="#ffe8f3"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" rx="32" fill="url(#bg)"/>
+  <ellipse cx="88" cy="66" rx="18" ry="42" fill="#ffffff"/>
+  <ellipse cx="152" cy="66" rx="18" ry="42" fill="#ffffff"/>
+  <ellipse cx="88" cy="68" rx="8" ry="26" fill="#ffd4e7"/>
+  <ellipse cx="152" cy="68" rx="8" ry="26" fill="#ffd4e7"/>
+  <circle cx="120" cy="132" r="62" fill="#fff"/>
+  <circle cx="97" cy="125" r="5.5" fill="#3f2a36"/>
+  <circle cx="143" cy="125" r="5.5" fill="#3f2a36"/>
+  <ellipse cx="120" cy="138" rx="8" ry="6" fill="#ff9bc5"/>
+  <path d="M112 147c4 6 12 6 16 0" stroke="#3f2a36" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <ellipse cx="86" cy="140" rx="11" ry="7" fill="#ffd0e5"/>
+  <ellipse cx="154" cy="140" rx="11" ry="7" fill="#ffd0e5"/>
+  <path d="M120 184c-14 0-24 8-24 18h48c0-10-10-18-24-18z" fill="#ffe2ef"/>
+</svg>

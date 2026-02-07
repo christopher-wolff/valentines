@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">Cute bunny dancing</title>
+  <desc id="desc">A bunny dancing side to side with hearts.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff2fb"/>
+      <stop offset="1" stop-color="#ffd9ec"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" rx="32" fill="url(#bg)"/>
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="-8 0;8 0;-8 0" dur="0.8s" repeatCount="indefinite"/>
+    <ellipse cx="88" cy="64" rx="18" ry="42" fill="#ffffff"/>
+    <ellipse cx="152" cy="64" rx="18" ry="42" fill="#ffffff"/>
+    <ellipse cx="88" cy="66" rx="8" ry="26" fill="#ffd4e7"/>
+    <ellipse cx="152" cy="66" rx="8" ry="26" fill="#ffd4e7"/>
+    <circle cx="120" cy="132" r="62" fill="#fff"/>
+    <circle cx="97" cy="123" r="6" fill="#3f2a36"/>
+    <circle cx="143" cy="123" r="6" fill="#3f2a36"/>
+    <ellipse cx="120" cy="137" rx="8" ry="6" fill="#ff88bc"/>
+    <path d="M104 148c10 13 22 13 32 0" stroke="#3f2a36" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+    <path d="M84 173l-25 13" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>
+    <path d="M156 173l25 13" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  <g fill="#ff6faa">
+    <path d="M34 118c6-9 18-4 14 5-4 8-14 9-14-5z">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="0.9s" repeatCount="indefinite"/>
+    </path>
+    <path d="M206 106c6-9 18-4 14 5-4 8-14 9-14-5z">
+      <animate attributeName="opacity" values="1;0.2;1" dur="0.9s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>
